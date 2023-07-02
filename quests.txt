@@ -1,0 +1,10 @@
+Qual é a capital do Brasil?;a) São Paulo;b) Rio de Janeiro;c) Brasília;d) Salvador;c
+Qual é o maior planeta do Sistema Solar?;a) Marte;b) Júpiter;c) Saturno;d) Terra;b
+Qual é o elemento químico com símbolo H?;a) Hélio;b) Hidrogênio;c) Oxigênio;d) Carbono;b
+Qual é a capital da Austrália?;a) Sydney;b) Melbourne;c) Canberra;d) Perth;c
+Qual é o nome do maior osso do corpo humano?;a) Fêmur;b) Tíbia;c) Úmero;d) Esterno;a
+Quem escreveu o livro O Pequeno Príncipe?;a) Antoine de Saint Exupéry;b) Júlio Verne;c) Lewis Carroll;d) Ernest Hemingway;a
+Qual é o nome do rio que corta a cidade de Paris?;a) Sena;b) Tâmisa;c) Reno;d) Danúbio;a
+Qual é o nome da lei que afirma que a força resultante sobre um corpo é igual ao produto de sua massa pela sua aceleração?;a) Lei da gravitação universal;b) Lei de Coulomb;c) Lei de Ohm;d) Segunda lei de Newton;d
+Qual é o nome do maior deserto do mundo?;a) Gobi;b) Atacama;c) Kalahari;d) Saara;d
+Qual foi a empresa responsável por levar turistas para conhecer o Titanic por 250 mil dólares?;a) Blue Origin;b) OceanGate Expeditions;c) Turismo Titanic;d) Virgin Galactic;b

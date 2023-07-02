@@ -15,19 +15,8 @@ public class Main {
             opcaoOperacional = Integer.parseInt(input.nextLine());
             switch (opcaoOperacional) {
                 case 1:
-                    System.out.println("Pergunta");
-                    Pergunta[] perguntas = {
-                            new Pergunta("Qual é a capital do Brasil?", new String[]{"a) São Paulo", "b) Rio de Janeiro", "c) Brasília", "d) Salvador"}, "c"),
-                            new Pergunta("Qual é o maior planeta do Sistema Solar?", new String[]{"a) Marte", "b) Júpiter", "c) Saturno", "d) Terra"}, "b"),
-                            new Pergunta("Qual é o elemento químico com símbolo H?", new String[]{"a) Hélio", "b) Hidrogênio", "c) Oxigênio", "d) Carbono"}, "b"),
-                            new Pergunta("Qual é a capital da Austrália?", new String[]{"a) Sydney","b) Melbourne","c) Canberra","d) Perth"}, "c" ),
-                            new Pergunta("Quem escreveu o livro O Pequeno Príncipe?", new String[]{"a) Antoine de Saint-Exupéry","b) Júlio Verne","c) Lewis Carroll","d) Ernest Hemingway"}, "a" ),
-                            new Pergunta("Qual é o nome do maior osso do corpo humano?", new String[]{"a) Fêmur","b) Tíbia","c) Úmero","d) Esterno"}, "a" ),
-                            new Pergunta("Qual é o nome do rio que corta a cidade de Paris?", new String[]{"a) Sena","b) Tâmisa","c) Reno","d) Danúbio"}, "a" ),
-                            new Pergunta("Qual é o nome do instrumento musical de cordas que tem a forma de um triângulo?", new String[]{"a) Violino","b) Harpa","c) Bandolim","d) Cítara"}, "b" ),
-                            new Pergunta("Qual é o nome do maior deserto do mundo?", new String[]{"a) Gobi","b) Atacama","c) Kalahari","d) Saara"}, "d" ),
-                            new Pergunta("Qual foi a empresa responsável por levar turistas para conhecer o Titanic por 250 mil dólares?", new String[]{"a) Blue Origin","b) OceanGate Expeditions","c) Turismo Titanic","d) Virgin Galactic"}, "b" )
-                    };
+                    // Chama o método lerArquivo da classe Arquivo, passando o nome do arquivo.txt que contém as perguntas
+                    ArrayList<Pergunta> perguntas = Arquivo.lerArquivo("quests.txt");
 
                     int pontuacao = 0;
                     int contador = 1;
@@ -43,7 +32,7 @@ public class Main {
 
                         System.out.println("-------------------------------------");
                         System.out.println("Digite a sua Resposta: ");
-                        String resposta = input.nextLine();
+                        String resposta = input.nextLine().toLowerCase();
 
                         if (resposta.equalsIgnoreCase(pergunta.getRespostaCorreta())) {
                             System.out.println("Resposta correta! Você ganhou R$" + pergunta.getPontuacao() + " reais!");
