@@ -33,7 +33,7 @@ public class Main {
                     int contador = 1;
 
                     // Pede o nome do jogador
-                    System.out.println("Digite o seu nome: ");
+                    System.out.println("Digite o seu nome para estar participando do Quiz: ");
                     String nome = input.nextLine();
 
                     for (Pergunta pergunta : perguntas) {
@@ -52,6 +52,7 @@ public class Main {
                             System.out.println("Resposta incorreta! Você perdeu...");
                             System.out.println("A resposta correta era a letra: " + pergunta.getRespostaCorreta());
                             System.out.println();
+                            //Como dito nas regras, caso o jogador erre ele recebe apenas a metade do valor ganho
                             pontuacao = pontuacao / 2;
                             break;
                         }
@@ -60,20 +61,16 @@ public class Main {
                     System.out.println("Fim do jogo! Sua pontuação final é: R$" + pontuacao);
                     System.out.println();
 
-                    // Cria um novo objeto Jogador com o nome e a pontuação
+                    // Cria um novo Jogador e o add ao array com o nome e a pontuação
                     Jogador jogador = new Jogador(nome, pontuacao);
-
-                    // Adiciona o jogador ao ArrayList
                     jogadores.add(jogador);
 
                     break;
                 case 2:
-                    // Cria um objeto do tipo Ranking com o ArrayList de jogadores
                     Ranking ranking = new Ranking(jogadores);
-                    // Verifica se o ArrayList de jogadores não está vazio
 
+                    // Verifica se o ArrayList de jogadores não está vazio
                     if (!jogadores.isEmpty()) {
-                        // Chama o método exibirRanking
                         ranking.exibirRanking();
                     } else {
                         System.out.println("Não há jogadores no ranking.");

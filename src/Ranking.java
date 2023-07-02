@@ -7,9 +7,9 @@ class Ranking {
     public Ranking(ArrayList<Jogador> jogadores) {
         this.jogadores = jogadores;
     }
-    // Um método para exibir o ranking
     public void exibirRanking() {
-        // Ordena o ArrayList pelo atributo pontuação em ordem decrescente
+
+        // Ordena em ordem decrescente
         Collections.sort(jogadores, new Comparator<Jogador>() {
             @Override
             public int compare(Jogador j1, Jogador j2) {
@@ -17,7 +17,7 @@ class Ranking {
             }
         });
 
-        // Exibe o ArrayList no menu de classificação usando um laço for
+        // Exibe o ranking usando um laço for
         for (int i = 0; i < jogadores.size(); i++) {
             System.out.println((i + 1) + " - " + jogadores.get(i).getNome() + " - R$" + jogadores.get(i).getPontuacao());
         }

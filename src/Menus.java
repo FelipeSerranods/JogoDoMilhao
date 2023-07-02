@@ -3,7 +3,7 @@ public class Menus{
         System.out.println("Jogo de Quiz");
         System.out.println("- - - - - - - - - - ");
         System.out.println("1 - Iniciar Jogo");
-        System.out.println("2 - Ranking"); // Mostra o Usuario que conseguiu chegar mais longe
+        System.out.println("2 - Ranking");
         System.out.println("3 - Regras");
         System.out.println("4 - Sair");
         System.out.println();
